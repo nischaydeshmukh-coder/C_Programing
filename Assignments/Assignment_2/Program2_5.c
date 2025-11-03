@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdbool.h>   // for bool, true, false
+///////////////////////////////////////////////////////////////
+//
+//  Function Name : ChkEven
+//  Description :   Number is even or odd
+//  Input :         Integer
+//  Output :        Character
+//  Author :        Nischay Hemant Deshmukh
+//  Date :          25/10/2025
+//
+///////////////////////////////////////////////////////////////////
+bool ChkEven(int iNo)
+{
+    if (iNo % 2 == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+int main()
+{
+    int iValue = 0;
+    bool bRet = false;
+
+    printf("Enter number: ");
+    scanf("%d", &iValue);
+
+    bRet = ChkEven(iValue);
+
+    if (bRet == true)
+    {
+        printf("Number is Even\n");
+    }
+    else
+    {
+        printf("Number is Odd\n");
+    }
+
+    return 0;
+}
