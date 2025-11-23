@@ -1,0 +1,38 @@
+//Input :  8
+//Output : 2   4   6   8   10   12   14  16
+
+/////////////////////////////////////////////////////////////////////
+//
+//  Function Name : Pattern
+//  Description :   Displai even numbers till  n.
+//  Input :         int
+//  Output :        int
+//  Auther :        Nischay Hemant Deshmukh
+//  Date :          21/11/2025
+//
+/////////////////////////////////////////////////////////////////////
+
+#include<stdio.h> 
+void Pattern(int iNo) 
+{ 
+    int iCnt = 0;
+
+    for(iCnt = 1; iCnt <= iNo ; iCnt++)
+    {
+        
+            printf("  %d  ", iCnt * 2);
+        
+    }
+} 
+
+int main() 
+{ 
+    int iValue = 0; 
+
+    printf("Enter number of elements:"); 
+    scanf("%d",&iValue); 
+   
+    Pattern(iValue); 
+   
+    return 0; 
+} 
