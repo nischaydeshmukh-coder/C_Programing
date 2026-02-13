@@ -14,7 +14,7 @@
       int sum = 0;
     for(int i = 1; i <=limit; i++)
     {
-        sum =2 * i;
+        sum = sum + i;
     }
     return sum;
 }
@@ -26,4 +26,5 @@
     printf("%d\n", sum_even_numbers(limit));
     return 0;
  }
+
   //Time Complexity: O(N)
