@@ -2,7 +2,7 @@
 ///////////////////////////////////////////////////////////////
 //
 //  Function Name : DisplayFactor
-//  Description :   Print even Fcators
+//  Description :   Print even Factors
 //  Input :         Integer
 //  Output :        Integer
 //  Author :        Nischay Hemant Deshmukh
@@ -34,4 +34,5 @@ int main()
     DisplayFactor(iValue); 
 
     return 0; 
+
 } 
