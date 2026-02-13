@@ -14,7 +14,7 @@ int MultFact(int iNo)
     int i = 0;
     int iMult = 1;
 
-    if (iNo <= 0)
+    if (iNo < 0)
     {
         iNo = -iNo;   
     }
@@ -26,9 +26,10 @@ int MultFact(int iNo)
             iMult = iMult * i;
         }
     }
-
+    iMult = iMult * iNo;   
     return iMult;
 }
+
 
 int main()
 {
@@ -43,4 +44,5 @@ int main()
     printf("Multiplication of factors is: %d\n", iRet);
 
     return 0;
+
 }
